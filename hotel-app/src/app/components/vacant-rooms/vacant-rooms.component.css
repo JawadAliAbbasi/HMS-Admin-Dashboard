@@ -1,0 +1,89 @@
+h1 {
+
+    font-family:cursive;
+    color: brown;
+    text-align: center;
+}
+
+.area div {
+    float: left;
+}
+
+.area {
+    
+    position: relative;
+    left: 10px;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.container {
+    width: 200px;
+    height: 25vh;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding-top: 50;
+    float: left;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.container img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 77%;
+    background: rgba(145, 49, 49, 0.602);
+}
+
+.text {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: white;
+
+
+    font-size: 15px;
+    overflow: hidden;
+    width: 100%;
+    height: 77%;
+    border-radius: 10px 10px 0px 0px;
+
+
+    padding: 1;
+    display: flex;
+    flex-direction: column;
+    background: rgba(145, 49, 49, 0.602);
+}
+
+.book {
+
+    position: absolute;
+    background-color: rgba(145, 49, 49, 0.602);
+    box-shadow: 20px 20px 20px 20px rgba(145, 49, 49, 0.602);
+    top: 77%;
+    border-radius: 0px 0px 10px 10px;
+    width: 100%;
+    height: 23%;
+    text-align: center;
+    color: rgb(119, 4, 4);
+    border: 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+.book:hover {
+
+    background-color: rgba(145, 49, 49, 0.915);
+    color: white;
+}

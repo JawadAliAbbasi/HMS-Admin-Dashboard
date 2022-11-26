@@ -1,0 +1,19 @@
+<div>
+    <h1>Vacant Rooms</h1>
+    <div class="area">
+        <div *ngFor="let room of rooms">
+            <div class="container" *ngIf="room.number != undefined">
+                <button class="book" (click)="bookRoom(room)">Book Room</button>
+                <img src="../../../assets/deluxe" *ngIf="room.type == 'Deluxe'"/>
+                <img src="../../../assets/single.webp" *ngIf="room.type == 'Single'"/>
+                <img src="../../../assets/suite.jpg" *ngIf="room.type == 'Suite'"/>
+                <img src="../../../assets/default" *ngIf="room.type == undefined"/>
+                <div class="text">
+                    <h4>Room No: {{room.number}}</h4>
+                    <p><i>{{room.type}}</i></p>
+                    <p >{{room.beds}} Bed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
